@@ -1,0 +1,4 @@
+Private Sub CheckBox1_Click()
+If CheckBox1.Value = True Then Range("A1").Value = "Hello Világ"
+If CheckBox1.Value = False Then Range("A1").Value = ""
+End Sub
