@@ -1,0 +1,3 @@
+Private Sub TextBox1_Change()
+Range("A1").Value = TextBox1.Value
+End Sub
