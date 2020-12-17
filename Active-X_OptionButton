@@ -1,0 +1,7 @@
+Private Sub OptionButton1_Click()
+If OptionButton1.Value = True Then Range("A1").Value = "Hello Világ"
+End Sub
+
+Private Sub OptionButton2_Click()
+If OptionButton2.Value = True Then Range("A1").Value = ""
+End Sub
