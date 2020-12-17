@@ -1,0 +1,40 @@
+'v1
+Private Sub CommandButton1_Click()
+Dim a, b, d, x1, x2 As Integer 'd = diszkrimináns
+a = Range("A2").Value
+b = Range("B2").Value
+c = Range("C2").Value
+d = (b * b) - (4 * a * c)
+d = Sqr(d)
+b = b * (-1)
+x1 = (b + d) / (2 * a)
+x2 = (b - d) / (2 * a)
+Range("D2").Value = x1
+Range("E2").Value = x2
+End Sub
+
+'v2
+Private Sub CommandButton1_Click()
+Dim a, b, d, x1, x2 As Integer 'd = diszkrimináns
+a = Range("A2").Value
+b = Range("B2").Value
+c = Range("C2").Value
+d = (b * b) - (4 * a * c)
+b = b * (-1)
+x1 = (b + Sqr(d)) / (2 * a)
+x2 = (b - Sqr(d)) / (2 * a)
+Range("D2").Value = x1
+Range("E2").Value = x2
+End Sub
+
+'v3
+Private Sub CommandButton1_Click()
+Dim a, b, d, x1, x2 As Integer 'd = diszkrimináns
+a = Range("A2").Value
+b = Range("B2").Value
+c = Range("C2").Value
+x1 = (-b + Sqr((b * b) - (4 * a * c))) / (2 * a)
+x2 = (-b - Sqr((b * b) - (4 * a * c))) / (2 * a)
+Range("D2").Value = x1
+Range("E2").Value = x2
+End Sub
