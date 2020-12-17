@@ -1,0 +1,4 @@
+Private Sub ToggleButton1_Click()
+If ToggleButton1.Value = True Then Range("A1").Value = "Hello Világ"
+If ToggleButton1.Value = False Then Range("A1").Value = ""
+End Sub
