@@ -1,0 +1,9 @@
+Private Sub CommandButton1_Click()
+Dim a, b As Integer
+a = Range("A2").Value
+b = Range("B2").Value
+Range("C2").Value = a + b
+Range("D2").Value = a - b
+Range("E2").Value = a * b
+Range("F2").Value = a / b
+End Sub
