@@ -1,0 +1,8 @@
+Private Sub CommandButton1_Click()
+Dim c As Variant
+For Each c In Range("A1:B15")
+If IsNumeric(c) Then
+    c.Value = c.Value + 1
+  End If
+Next
+End Sub
